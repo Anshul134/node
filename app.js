@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./src/routes/index');
+const migrateRouter = require('./src/routes/migrateDb');
 const usersRouter = require('./src/routes/users');
 const hbs = require( 'express-handlebars');
 
@@ -35,6 +36,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+//Route for migrating db from mysql to mongo;
+app.use('/migrate', migrateRouter);
 
 app.engine( 'hbs', hbs( {
   extname: 'hbs',

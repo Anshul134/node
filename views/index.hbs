@@ -109,35 +109,35 @@
 	  		<div class="tour-cards card-div">
 	  			<div class="row">
 	  				<div class=""></div>
-            {{#each tourPackages}}
+            {{#each tourGuides}}
               <div class="demo"></div>
   	  				<div class="col-md-2 card-tours">
   	  					<div class="card-img-head">
   	  						<div class="overlay overlay-package">
-  	  							<button class="btn  overlay-btn package-overlay-btn">Book Now</button>
+  	  							<button class="btn  overlay-btn package-overlay-btn">Know More</button>
   	  						</div>
-  	  						<img src="assets/images/upload/packages/{{{this.display_img}}}" alt="{{this.package_name}}" class="img-responsive card-img">
+  	  						<img src="assets/images/upload/{{{this.design_img}}}" alt="{{this.guide_name}}" class="img-responsive card-img">
   	  					</div>
                 <div class="col-md-12 tour-card-brief">
-                    <p>{{this.package_name}}</p>
+                    <p>{{this.guide_name}}</p>
                 </div>
 
-  	  					<div class="col-md-6 tour-duration">
-  	  						<p >{{this.no_days}}</p>
+  	  					<div class="col-md-12 guide-cat">
+  	  						<p >{{this.guide_category}} guide</p>
   	  					</div>
 
-                <div class="col-md-6 tour-card-rates">
-  	  						<p>For <span>&#8377; {{this.our_price}}</span></p>
+                <div class="col-md-12 guide-places">
+  	  						<p> <span>{{this.guide_place}}</span></p>
   	  					</div>
 
-  	  					<div class="package-card-inclusions col-md-12">
+  	  					<!-- <div class="package-card-inclusions col-md-12">
   	  						Includes :
 
   	  						<i class="fa fa-building package-include" aria-hidden="true" title="stay"></i>
   	  						<i class="fas fa-fire package-include" aria-hidden="true" title="camping"></i>
   	  						<i class="fa fa-car package-include" aria-hidden="true" title="travel"></i>
   	  						<i class="fas fa-walking package-include" aria-hidden="true" title="activities"></i>
-  	  					</div>
+  	  					</div> -->
   	  				</div>
             {{/each}}
 	  			</div>

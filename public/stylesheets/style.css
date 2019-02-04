@@ -238,3 +238,21 @@ footer  {
   margin-top: 47%;
   margin-left: 25%;
 }
+
+.card-img-head  {
+  background: white;
+  height: 250px;
+}
+
+.card-img {
+  height: 250px;
+  width:100%;
+}
+
+/* .card-tours {
+  max-height: 00px;
+} */
+
+.guide-section  {
+  margin-bottom:10%
+}

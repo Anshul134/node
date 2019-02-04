@@ -8,6 +8,7 @@ const app = require('../app');
 const debug = require('debug')('guide-node:server');
 const http = require('http');
 
+
 // const MongoClient = require('mongodb').MongoClient;
 // const url = "mongodb://localhost:27017/";
 
@@ -28,9 +29,11 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
- server.listen(port);
+
+   server.listen(port);
    server.on('error', onError);
    server.on('listening', onListening);
+
 
  // let mongoDb = MongoClient.connect(url, (err,mongoDb)  =>{
  //   if(err) throw err;
