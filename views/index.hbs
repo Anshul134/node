@@ -1,0 +1,147 @@
+<div id="page">
+  <div id="gtco-header" class="gtco-cover gtco-cover-xs" role="Nav and Banner backgroud holder" style="background:url('/assets/images/banner-bg.jpg') no-repeat;" >
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+  </div>
+  <div class="col-md-12">
+  		<div class="tour-section">
+	  		<div class="tour-head text-center">
+	  			<h3 class="upcoming-heading">Up-coming Tour Events</h3>
+	  			<p class="">Limited Period Offer, Hurry! Book These Events and Avail Heavy Discounts.</p>
+	  		</div>
+	  		<div class="tour-cards card-div">
+	  			<div class="row">
+	  				<div class=""></div>
+            {{#each tourEvents}}
+              <div class="demo"></div>
+  	  				<div class="col-md-3 card-tours">
+  	  					<div class="card-img-head">
+  	  						<div class="overlay">
+  	  							<button class="btn  overlay-btn">Book Now</button>
+  	  						</div>
+  	  						<img src="{{{this.image1}}}" alt="rishikesh-tour" class="img-responsive card-img">
+  	  					</div>
+                <div class="col-md-12 tour-card-brief">
+                    <p>{{this.event_brief}}</p>
+                </div>
+  	  					<div class="col-md-12 tour-card-destination">
+  	  						<p class="tour-card-dest-name">{{this.event_location}}</p>
+
+  	  					</div>
+
+  	  					<div class="col-md-6 tour-duration">
+  	  						<p >{{this.number_days}}</p>
+  	  					</div>
+
+                <div class="col-md-6 tour-card-rates">
+  	  						<p>Price <span>&#8377;1200</span></p>
+  	  					</div>
+
+  	  					<div class="event-card-inclusions col-md-12">
+  	  						Includes :
+  	  						<i class="fa fa-building event-include" aria-hidden="true" title="stay"></i>
+  	  						<i class="fas fa-fire event-include" aria-hidden="true" title="camping"></i>
+  	  						<i class="fa fa-car event-include" aria-hidden="true" title="travel"></i>
+  	  						<i class="fas fa-walking event-include" aria-hidden="true" title="activities"></i>
+  	  					</div>
+  	  				</div>
+            {{/each}}
+	  			</div>
+	  		</div>
+  		</div>
+
+  </div>
+
+  <div class="col-md-12">
+  		<div class="package-section">
+	  		<div class="tour-head text-center">
+	  			<h3 class="upcoming-heading">Most Popular Tour Packages</h3>
+	  			<p class="">Limited Period Offer, Hurry! Book These Events and Avail Heavy Discounts.</p>
+	  		</div>
+	  		<div class="tour-cards card-div">
+	  			<div class="row">
+	  				<div class=""></div>
+            {{#each tourPackages}}
+              <div class="demo"></div>
+  	  				<div class="col-md-2 card-tours">
+  	  					<div class="card-img-head">
+  	  						<div class="overlay overlay-package">
+  	  							<button class="btn  overlay-btn package-overlay-btn">Book Now</button>
+  	  						</div>
+  	  						<img src="assets/images/upload/packages/{{{this.display_img}}}" alt="{{this.package_name}}" class="img-responsive card-img">
+  	  					</div>
+                <div class="col-md-12 tour-card-brief">
+                    <p>{{this.package_name}}</p>
+                </div>
+
+  	  					<div class="col-md-6 tour-duration">
+  	  						<p >{{this.no_days}}</p>
+  	  					</div>
+
+                <div class="col-md-6 tour-card-rates">
+  	  						<p>For <span>&#8377; {{this.our_price}}</span></p>
+  	  					</div>
+
+  	  					<div class="package-card-inclusions col-md-12">
+  	  						Includes :
+
+  	  						<i class="fa fa-building package-include" aria-hidden="true" title="stay"></i>
+  	  						<i class="fas fa-fire package-include" aria-hidden="true" title="camping"></i>
+  	  						<i class="fa fa-car package-include" aria-hidden="true" title="travel"></i>
+  	  						<i class="fas fa-walking package-include" aria-hidden="true" title="activities"></i>
+  	  					</div>
+  	  				</div>
+            {{/each}}
+	  			</div>
+	  		</div>
+  		</div>
+
+  </div>
+
+  <div class="col-md-12">
+  		<div class="guide-section">
+	  		<div class="tour-head text-center">
+	  			<h3 class="upcoming-heading">Our Tour Guides</h3>
+	  			<p class="">Meet the best tour guides, this world has to offer</p>
+	  		</div>
+	  		<div class="tour-cards card-div">
+	  			<div class="row">
+	  				<div class=""></div>
+            {{#each tourPackages}}
+              <div class="demo"></div>
+  	  				<div class="col-md-2 card-tours">
+  	  					<div class="card-img-head">
+  	  						<div class="overlay overlay-package">
+  	  							<button class="btn  overlay-btn package-overlay-btn">Book Now</button>
+  	  						</div>
+  	  						<img src="assets/images/upload/packages/{{{this.display_img}}}" alt="{{this.package_name}}" class="img-responsive card-img">
+  	  					</div>
+                <div class="col-md-12 tour-card-brief">
+                    <p>{{this.package_name}}</p>
+                </div>
+
+  	  					<div class="col-md-6 tour-duration">
+  	  						<p >{{this.no_days}}</p>
+  	  					</div>
+
+                <div class="col-md-6 tour-card-rates">
+  	  						<p>For <span>&#8377; {{this.our_price}}</span></p>
+  	  					</div>
+
+  	  					<div class="package-card-inclusions col-md-12">
+  	  						Includes :
+
+  	  						<i class="fa fa-building package-include" aria-hidden="true" title="stay"></i>
+  	  						<i class="fas fa-fire package-include" aria-hidden="true" title="camping"></i>
+  	  						<i class="fa fa-car package-include" aria-hidden="true" title="travel"></i>
+  	  						<i class="fas fa-walking package-include" aria-hidden="true" title="activities"></i>
+  	  					</div>
+  	  				</div>
+            {{/each}}
+	  			</div>
+	  		</div>
+  		</div>
+
+  </div>
